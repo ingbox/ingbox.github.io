@@ -129,6 +129,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/ingb__/"
+    - label: "Reddit"
+      icon: "fab fa-reddit"
+      url: "https://www.reddit.com/user/ShowerSenior9017"
 
 # Site Footer
 footer:
