@@ -1,1 +1,0 @@
-PLZ upload images only
