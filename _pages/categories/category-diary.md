@@ -1,11 +1,11 @@
 ---
-title: "C++ 프로그래밍"
+title: "Diary"
 layout: archive
-permalink: categories/cpp
+permalink: categories/diary
 author_profile: true
 sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.Cpp %}
+{% assign posts = site.categories.diary %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
