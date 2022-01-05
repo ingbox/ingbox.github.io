@@ -1,0 +1,9 @@
+---
+title: "Ingbox's First Post"
+layout: single
+categories:
+  - diary
+---
+
+# Test
+
