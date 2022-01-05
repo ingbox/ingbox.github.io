@@ -105,7 +105,7 @@ author:
   name             : "ingb"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ForBidden"
-  location         : "Republic of Korea"
+  # location         : "Republic of Korea"
   email            : "ingbox01@gmail.com"
   links:
 #     - label: "Email"
