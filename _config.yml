@@ -108,9 +108,9 @@ author:
   location         : "Republic of Korea"
   email            : "ingbox01@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.ingbox01@gmail.com"
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: "mailto:your.ingbox01@gmail.com"
 #     - label: "Website"
 #       icon: "fas fa-fw fa-link"
 #       url: "https://your-website.com"
