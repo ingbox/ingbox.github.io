@@ -131,3 +131,6 @@ html {
 
 ## 마무리
 [Mozilla 개발자 홈페이지](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type)를 참고하였습니다. 오늘은 토익 공부와 가사 번역도 할 예정이기 때문에 간단히 마친다. 차후에 더 추가할 내용이 있으면 추가할 것이다. 
+
+<font size=2>"가사 번역을 올리려고 했는데, 찾아보니 저작권 침해라고 한다... 그냥 나만의 일기장에
+번역하는걸로 ㅠㅠ"</font>
