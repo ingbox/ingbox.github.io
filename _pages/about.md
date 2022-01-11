@@ -8,15 +8,6 @@ sidebar_main: true
 
 <style>
 
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .slider{
     width: 800px;
     height: 500px;
