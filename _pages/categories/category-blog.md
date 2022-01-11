@@ -4,6 +4,10 @@ layout: archive
 permalink: categories/blog
 author_profile: true
 sidebar_main: true
+
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 
