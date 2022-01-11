@@ -5,9 +5,7 @@ permalink: categories/diary
 author_profile: true
 sidebar_main: true
 
-sitemap:
-  changefreq: daily
-  priority : 1.0
+
 ---
 
 

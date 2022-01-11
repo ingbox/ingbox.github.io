@@ -3,10 +3,6 @@ layout: single
 title: "Blog - CSS scroll snap"
 categories:
   - blog
-
-sitemap:
-  changefreq: daily
-  priority : 1.0
 ---
 
 ## 서론
