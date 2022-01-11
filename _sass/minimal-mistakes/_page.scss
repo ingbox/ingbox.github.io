@@ -82,6 +82,10 @@ body {
   }
 }
 
+.archive .page__title {
+  font-family: $daon-m;
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
@@ -114,6 +118,7 @@ body {
   li,
   dl {
     font-size: 1em;
+    
   }
 
   /* paragraph indents */
@@ -211,9 +216,12 @@ body {
 
     .page__title {
       font-size: $type-size-2;
+      
+      
 
       @include breakpoint($small) {
         font-size: $type-size-1;
+        
       }
     }
   }
@@ -378,6 +386,7 @@ body {
   padding: 0;
   font-size: 0.75em;
   list-style: none;
+  
 
   @include breakpoint($large) {
     grid-template-columns: repeat(3, 1fr);
@@ -405,6 +414,7 @@ body {
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
+  font-family: $daon-m;
 }
 
 /*
@@ -426,6 +436,7 @@ body {
   font-size: $type-size-6;
   border-top: 1px solid $border-color;
   text-transform: uppercase;
+  
 }
 
 .page__comments-form {
@@ -535,6 +546,7 @@ body {
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+  
 }
 
 /*

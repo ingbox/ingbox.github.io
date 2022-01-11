@@ -6,3 +6,18 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+@font-face {
+    font-family: "Daon(M)";
+    src: url("/assets/fonts/daon(m).ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Daon(B)";
+    src: url("/assets/fonts/daon(b).ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
