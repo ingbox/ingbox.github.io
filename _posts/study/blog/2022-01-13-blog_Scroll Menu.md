@@ -103,7 +103,7 @@ $(function(){
 
 ```
 
-* `$(this).index()`는 같은 레벨에 있는 요소를 기준으로 볓 번째 index 인지
+* `$(this).index()`는 같은 레벨에 있는 요소를 기준으로 몇 번째 index 인지
 * `$("item").index(this)` 모든 item을 기준으로 몇 번째 index인지
 
 이렇게 scroll을 담당하는 html과 body에 Animation을 주어 Top으로 부터 Offset 만큼 이동하게 만드는 것이다.
@@ -141,7 +141,7 @@ height: 1000px;
 ## 마무리
 
 혹시 github blog에서 local한 js파일을 어느 파일에서 관리해야할 지 모르는 사람이 있을까 싶어<br>
-적는다. post가 있는 folder 기준으로 `../../`를 해주면 root로 이동하게 된다.<br>
+적는다. Post가 있는 folder 기준으로 `../../`를 해주면 root로 이동하게 된다.<br>
 directory 구조마다 다를 수 있으니, 작동하지 않는 사람은<br>
 console[f12키 -> console]로 404 Error가 뜨는 지 확인해가면서 root 위치를 찾아주자.<br> 
 
