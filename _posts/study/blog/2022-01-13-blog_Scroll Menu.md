@@ -8,7 +8,7 @@ categories:
 ## 서론
 
 오늘은 **<u>Scroll Menu</u>**에 대해서 알아보자. <br>
-JQuery를 이용하는 방법과 오직 Javascript로 구현하는 방법이 있는데, <br> 
+JQuery를 이용하는 방법과 Javascript로 구현하는 방법이 있는데<br> 
 JQuery문으로 구현해 보겠다. <br><br>
 **<u>Scroll Menu</u>**는 body에 Section을 정해놓고 그 Section으로 화면을 바로 이동시켜주는 것이다.<br>
 페이지에서 자체적으로 링크를 달아주면 바로 이동이 가능하지만 매우 투박하게 움직인다.<br><br>
