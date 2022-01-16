@@ -167,7 +167,7 @@ categories:
 }
 ```
 
-* `overflow` 속성은 CSS 내의 요소의 크기가 너무 클 때 어떻게 보여줄지 결정
+* `overflow` 속성은 CSS 내의 요소의 크기가 클 때 어떻게 보여줄 지 결정
 
 |속성 값|기능|
 |:-----:|:-----:|
@@ -182,9 +182,9 @@ categories:
 * `z-index` 는 화면에 보여질 우선순위를 의미
 
 > z-index가 없는 경우 다음 순서대로 아래에서 위로 쌓임
-> 1. 뿌리 엘리먼트와 배경과 테두리
-> 2. 자식 엘리먼트들은 HTML에서 등장하는 순서대로
-> 3. position이 지정된 자식 엘리먼트들은 HTML에서 등장하는 순서대로
+> 1. Root element와 배경과 테두리
+> 2. Child element들은 HTML에서 등장하는 순서대로
+> 3. position이 지정된 child element들은 HTML에서 등장하는 순서대로
 >
 > z-index가 있을 경우 숫자가 클수록 위에 쌓임(span위에 strong)
 
