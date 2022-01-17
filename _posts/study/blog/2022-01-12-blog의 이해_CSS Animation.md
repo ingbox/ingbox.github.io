@@ -372,31 +372,6 @@ hover 속성을 통해 마우스가 객체에 올라갔을 경우 동작하도�
   </div>
 </div> 
 
-<!-- <script>
-
-var typingBool = false; 
-var typingIdx = 0;
-var typingTxt = $(".typing-txt").text();
-typingTxt = typingTxt.split("");
-
-if(typingBool==false){ 
-       typingBool=true; 
-       var tyInt = setInterval(typing,100); 
-     }
-     
-function typing(){ 
-
-  if( typingIdx < typingTxt.length )
-  {
-    $(".typing").append(typingTxt[typingIdx]);
-    typingIdx++;
-    } else {
-      clearInterval(tyInt);
-    }
-}
-
-</script> -->
-
 
 ## 마무리
 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Blog - Scroll Menu (1/?)"
+title: "Blog - Scroll Menu"
 categories:
   - blog
 ---
