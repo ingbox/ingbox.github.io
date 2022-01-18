@@ -162,7 +162,7 @@ transition: all 2s 1s ease-in; /* all은 property의 모든 속성에 적용 */
 
     #background img:nth-of-type(1) {
       position: absolute;
-      width: 100px;
+      width: 12%;
       height: 100px;
       top: 50%;
       left: 10%;
@@ -176,7 +176,7 @@ transition: all 2s 1s ease-in; /* all은 property의 모든 속성에 적용 */
 
      #background img:nth-of-type(2) {
       position: absolute;
-      max-width: 100px;
+      width: 12%;
       height: auto;
       top: 50%;
       left: 30%;
