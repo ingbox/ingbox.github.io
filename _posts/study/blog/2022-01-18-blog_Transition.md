@@ -7,7 +7,7 @@ categories:
 
 ## 서론 
 
-오늘은 <u>Transition에 대해</u>을 알아보자.<br>
+오늘은 <u>Transition</u>에 대해 알아보자.<br>
 앞서 Animation에 관해 살펴보았는데 Transition과 무슨 차이가 있을까?<br>
 
 * Transition은 요소의 상태가 변하면 변하기 까지를 Animation을 실행
