@@ -64,7 +64,6 @@ Transition은 0% 100%가 지정되어 있는 상태에서 시작과 끝 속성�
       width: 100%;
   }
 ```
-
 * `transition-property`는 transition이 적용될 속성
 * `transition-duration`은 transition의 지속시간
 * `transition-delay`는 transition 적용 전과 후에 delay를 부여
@@ -80,6 +79,7 @@ Transition은 0% 100%가 지정되어 있는 상태에서 시작과 끝 속성�
 <br>
 
 ![](/assets/images/posting/blog_transition/picture1.jpg){:.aligncenter}
+
 <figcaption> [그림 1] cubic-bezier(.17,.67,.89,1.52)</figcaption>
 <br>
 
@@ -137,9 +137,7 @@ transition: all 2s 1s ease-in; /* all은 property의 모든 속성에 적용 */
       width: 100%;
   }
 
-
     /* 실습 */
-
 
     #background {
       position: relative;
@@ -223,6 +221,6 @@ transition: all 2s 1s ease-in; /* all은 property의 모든 속성에 적용 */
 
 ## 마무리
 
-내용은 [[Rock's Easyweb Youtube]](https://www.youtube.com/watch?v=t7HqLi92hSM)를 참고하였습니다.<br>
+내용은 [[Rock's Easyweb Youtube]](https://www.youtube.com/watch?v=xhOLFgKYBLg)를 참고하였습니다.<br>
 해당 내용은 상기 링크의 내용을 재구성하기 보다는 제가 이해하기 위해 정리한 것입니다.<br>
 더 자세한 내용은 해당 블로그에 있으니 참고해주시면 감사하겠습니다.
