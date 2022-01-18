@@ -28,6 +28,8 @@ Animation이 적용된 사이트의 예시로 [[디즈니 공식 홈페이지]](
   </div>
 
 <style>
+
+
 #section_1 p {
   position:relative;
   width: 700px;
