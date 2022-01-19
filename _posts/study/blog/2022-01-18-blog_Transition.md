@@ -78,7 +78,7 @@ Transition은 0% 100%가 지정되어 있는 상태에서 시작과 끝 속성�
 
 <br>
 
-![](/assets/images/posting/blog_transition/picture1.jpg){:.aligncenter}
+![](/assets/images/posting/blog_transition/picture.jpg){:.aligncenter}
 
 <figcaption> [그림 1] cubic-bezier(.17,.67,.89,1.52)</figcaption>
 <br>
