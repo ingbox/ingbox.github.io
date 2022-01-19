@@ -130,7 +130,6 @@ transition: all 2s 1s ease-in; /* all은 property의 모든 속성에 적용 */
     transition-duration: 2s;
     transition-delay: 0.5s;
     transition-timing-function: ease-in; 
-
   }
 
   #section_1:hover div {
@@ -154,6 +153,10 @@ transition: all 2s 1s ease-in; /* all은 property의 모든 속성에 적용 */
       margin-left: auto; 
       margin-right: auto;
       width: 400px;
+
+      font-size: 3vw;
+      font-family: "bit";
+      color: yellow;
     }
 
     #background img:nth-of-type(1) {
