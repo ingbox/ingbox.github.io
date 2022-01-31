@@ -1,5 +1,5 @@
 ---
-title: "youtube"
+title: "Youtube"
 layout: archive
 permalink: categories/youtube
 author_profile: true

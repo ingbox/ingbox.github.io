@@ -28,8 +28,9 @@ React의 특징으로
 * Component
 * 단방향 Data Binding
 * 가상 DOM
-* 간단
-* 성능
+* 가독성
+* 재사용성
+* 유지보수 편리
 
 이 있다. 하나씩 해 나가면서 왜 이러한 특징이 있는지 알아보자.<br>
 
@@ -41,6 +42,8 @@ React의 특징으로
 [[Visual Studio Code]](https://code.visualstudio.com/) 사이트에 접속해서 다운받자.
 
 ![](/assets/images/posting/react_220130/picture1.png){:.aligncenter}
+
+<br>
 
 ### Node.js
 
@@ -65,9 +68,9 @@ React의 특징으로
 
 해당 창에 
 
-`npx create-react-app 프로젝트명`
+`npx create-react-app 프로젝트명` 을 입력해준다.<br>
 
-을 입력해준다.<br>
+> npm은 Node.js로 만들어진 여러 프로그램을 명령어 환경에서 손쉽게 다운 받을 수 있게 도와주는 기술
 
 ![](/assets/images/posting/react_220130/picture4.png){:.aligncenter}
 
@@ -79,7 +82,22 @@ React의 특징으로
 ![](/assets/images/posting/react_220130/picture5.png){:.aligncenter}
 
 모든 준비가 완료됐다.<br>
-아래 Console에 `npm start`를 하면 WebSite가 열린다...<br>
-<font size=2>나는 왜인지 콘솔이 안먹는다... ㅠ</font><br>
+아래 Console에 `npm start`를 하면 WebSite가 열린다. <del><font size=2> 나는 왜인지 콘솔이 안먹는다... ㅠ</font></del><br>
 
 여기까지하면 React 환경 설정 끝이다!😃😃<br>
+
+
+## 마무리
+
+환경 구성이 어렵고, 그저 공부하는 것이면<br>
+온라인 상에서 React를 돌릴 수 있는 환경을 가상으로 제공해주기도 한다.<br>
+[[Code SandBox]](https://codesandbox.io/s/new) 해당 사이트로 간편하게 React 코딩을 해보자.
+
+그리고 React 공식 문서를 참고해서 더 많은 정보를 얻어보자.<br>
+간단히 얻을 수 있는 정보를 요약해보면
+
+* HTML로 코딩되어 있는 사이트를 부분적으로 React 기능 추가하기
+* JavaScript 툴체인, React 개발하는데 있어 필요한 툴들을 한번에 받을 수 있게 모아놓음
+
+> 툴체인은 대표적은 `create-react-app`으로 앱을 편리하게 한 번에 만들 때 사용됨<br>
+> 위에 App을 만든 것이 툴체인을 사용한 것임
