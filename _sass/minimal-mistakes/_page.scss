@@ -115,10 +115,12 @@ body {
 	}
 
   p,
-  li,
   dl {
     font-size: 1em;
-    
+  }
+
+  li {
+    font-size: 0.8em;
   }
 
   /* paragraph indents */
@@ -577,3 +579,14 @@ body {
 
 // 색깔 추가하기
 span#mus { color: $mustard; }
+
+daon { font-family: $daon-m;
+       background-color: rgba(68, 182, 112, 0.35);
+
+}
+
+caption1 {
+  padding-left: 2em;
+  font-size: 12px;
+  color:sandybrown;
+}
