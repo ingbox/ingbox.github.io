@@ -22,31 +22,30 @@ img.aligncenter{display:block;margin:0 auto}
 
 먼저 완성된 프로젝트를 Github 주소와 함께 업로드 한다.<br>
 
-[React Github 주소](https://github.com/ingbox/React_poke_Util)
+[[React Github 주소]](https://github.com/ingbox/React_poke_Util)
 
-전체적인 구조는 아래와 같다.<br>
+<h3>React 구조</h3>
 
 ![](/assets/images/posting/react_220317/picture1.png){:.aligncenter}
 <figcaption> [그림 1] 구성도</figcaption>
 
-> + App: 화면 출력 코드
->   -  Pokemon: 테이블 데이터 출력 컴포넌트(Component)
->   -  PokemonAdd: 포켓몬 데이터 삽입 컴포넌트(Component)
->   -  PokemonDelete: 포켓몬 데이터 삭제 컴포넌트(Component)
-> + Server: Restful API 서버, json과의 통신, Client와 DB를 연결 
-> + DB: AWS 서비스 이용
->   - RDS: 클라우드 상에 업로드 가능한 DB 서비스, SQL 사용
->   - HeidiSQL: DBMS로 HeidiSQL 사용 
++ App: 화면 출력 코드
+   -  Pokemon: 테이블 데이터 출력 컴포넌트(Component)
+   -  PokemonAdd: 포켓몬 데이터 삽입 컴포넌트(Component)
+   -  PokemonDelete: 포켓몬 데이터 삭제 컴포넌트(Component)
++ Server: Restful API 서버, json과의 통신, Client와 DB를 연결 
++ DB: AWS 서비스 이용
+   - RDS: 클라우드 상에 업로드 가능한 DB 서비스, SQL 사용
+   - HeidiSQL: DBMS로 HeidiSQL 사용 
 
+<h3> 완성 페이지</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rC8Bpksb86c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 마무리
 
 해당 영상이 19년도 영상이어서 프로젝트를 진행하면서 라이브러리 버전 이슈나,<br>
 약간의 코드 이슈 등이 존재했다.<br>
 하지만, 유튜브에 댓글이나 구글링을 통해 쉽게 해결할 수 있었다.<br>
-
-해당 영상은 완성된 페이지의 모습이다.<br>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rC8Bpksb86c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 뒤에 코드를 분석해보며 발생한 이슈 등을 함께 정리해 보려고 한다.<br>
 
