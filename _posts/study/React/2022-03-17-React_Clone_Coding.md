@@ -8,7 +8,7 @@ categories:
 <style>
 img.aligncenter{display:block;margin:0 auto}
 </style>
-<!-- rmdd -->
+<!-- d -->
 ## React BBS 
 
 컴공과의 영원한 친구 [[동빈나]](https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw)님의<br>
