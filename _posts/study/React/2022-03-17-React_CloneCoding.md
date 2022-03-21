@@ -9,7 +9,7 @@ categories:
 img.aligncenter{display:block;margin:0 auto}
 </style>
 <!-- d -->
-## React BBS 
+## 서론
 
 컴공과의 영원한 친구 [[동빈나]](https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw)님의<br>
 총 18강으로 이루어진 React 실전 강의를 완독하였다.<br> 
