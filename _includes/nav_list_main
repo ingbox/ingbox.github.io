@@ -39,6 +39,14 @@
                         <li><a href="/categories/blog" class=""> Blog ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+            </ul>  
+
+        <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "py" %}
+                        <li><a href="/categories/py" class=""> Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>   
 
         
@@ -54,6 +62,14 @@
                 {% for category in site.categories %}
                     {% if category[0] == "eip_w" %}
                         <li><a href="/categories/eip_w" class=""> 정보처리기사 필기 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+            
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "eip_p" %}
+                        <li><a href="/categories/eip_p" class=""> 정보처리기사 실기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>   
