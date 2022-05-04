@@ -14,7 +14,6 @@ img.aligncenter{display:block;margin:0 auto;}
 
 오늘은 오랜만에 코딩을 하는 김에 예전에 기억을 되살려서,<br>
 Crawling을 시도해보려고 한다.<br>
-<>b
 
 Crwaling 대상은 <span id="mus"><u>Melon 플레이리스트</u></span>의 목록이다.<br>
 Melon을 이용했었지만 이번에 지니로 바꾸는 바람에 플레이리스트 목록을 추출해야한다.<br><br>
