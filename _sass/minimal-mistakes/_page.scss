@@ -69,6 +69,7 @@ body {
 }
 
 .page__title {
+  font-family: $applesdb;
   margin-top: 0;
   line-height: 1;
 
@@ -83,7 +84,7 @@ body {
 }
 
 .archive .page__title {
-  font-family: $daon-m;
+  font-family: $applesdb;
 }
 
 .page__lead {
@@ -92,9 +93,16 @@ body {
 }
 
 .page__content {
+  font-family: $global-font-family;
+
   h2 {
-    padding-bottom: 0.5em;
+    font-family: $applesdm;
+    padding-bottom: 0.2em;
     border-bottom: 1px solid $border-color;
+  }
+
+  h3{
+    font-family: $applesdm;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -412,11 +420,11 @@ body {
   display: block;
   clear: both;
   color: $muted-text-color;
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
-  font-family: $daon-m;
+  font-family: $applesdb;
 }
 
 /*
@@ -580,9 +588,14 @@ body {
 // 색깔 추가하기
 span#mus { color: $mustard; }
 
+
+// 커스텀 폰트 다온체 사용하기
 daon { font-family: $daon-m;
        background-color: rgba(68, 182, 112, 0.35);
+}
 
+hl{
+  background-color: rgba(68, 182, 112, 0.35);
 }
 
 caption1 {

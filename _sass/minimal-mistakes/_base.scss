@@ -61,7 +61,7 @@ h6 {
 
 small,
 .small {
-  font-size: $type-size-6;
+  font-size: $type-size-6; 
 }
 
 p {
@@ -310,6 +310,7 @@ nav {
   }
 
   li {
+    font-family: $applesdb;
     list-style: none;
   }
 

@@ -13,8 +13,8 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$serif: "Noto Sans","Noto Sans Korean", Georgia, Times, serif !default;
-$sans-serif: "Noto Sans","Noto Sans Korean", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$serif:  "Noto Sans","Noto Sans Korean", Georgia, Times, serif !default;
+$sans-serif:  "apple SDL",-apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", // "Noto Sans","Noto Sans Korean"
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: "Noto Sans","Noto Sans Korean", Monaco, Consolas, "Lucida Console", monospace !default;
 
@@ -22,6 +22,12 @@ $monospace: "Noto Sans","Noto Sans Korean", Monaco, Consolas, "Lucida Console", 
 $daon-m: "daon(m)" !default;
 $daon-b: "daon(b)" !default;
 $bit: "bit" !default;
+
+$applesdl: "apple SDL" !default;
+$applesdm: "apple SDM" !default;
+$applesdb: "apple SDB" !default;
+
+
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -44,7 +50,7 @@ $type-size-2: 1.953em !default; // ~31.248px
 $type-size-3: 1.563em !default; // ~25.008px
 $type-size-4: 1.25em !default; // ~20px
 $type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
+$type-size-6: 0.77em !default; // ~12px
 $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
@@ -182,3 +188,4 @@ $intro-transition: intro 0.3s both !default;
 
 $mustard: #bcd596 !default;
 $gainsboro: #DCDCDC !default;
+

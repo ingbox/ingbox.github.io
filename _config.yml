@@ -21,11 +21,11 @@ title_separator          : "-"
 subtitle                 : "Better Late Than Never"
 name                     : "Ingb"
 description              : "For my Portfolio📘"
-url                      : "https://ingbox.github.io"
+url                      : "https://ingbox.github.io" 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/oper/8859-elmo-s-hell-fire.gif"
+logo                     : #
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -68,8 +68,8 @@ algolia:
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  search_engine_id       : 72ef5b27dd5c12922 # YOUR_SEARCH_ENGINE_ID
+  instant_search         : true # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
