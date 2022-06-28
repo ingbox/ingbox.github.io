@@ -1,5 +1,5 @@
 ---
-title: "정보처리기사 필기"
+title: "정보처리기사 실기"
 layout: archive
 permalink: categories/eip_p
 author_profile: true

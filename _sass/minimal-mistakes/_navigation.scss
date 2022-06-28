@@ -493,14 +493,14 @@
 // 사이드바 제목들
 .nav__sub-title {
   display: block;
-  margin: 0.5rem 0;
-  padding: 0.25rem 0;
+  margin: 0.3rem 0;
+  padding: 0.1rem 0;
   color: $mustard;
   font-family: $applesdb;
   font-size: $type-size-5;
   
   // font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase; // 대문자 만들어 주는 거
   border-bottom: 1px solid $border-color;
 }
 

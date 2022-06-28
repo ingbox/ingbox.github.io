@@ -60,7 +60,7 @@
 
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "eip_w" %}
+                    {% if category[0] == "eip_w" %} 
                         <li><a href="/categories/eip_w" class=""> 정보처리기사 필기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
