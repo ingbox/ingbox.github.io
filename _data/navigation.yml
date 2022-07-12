@@ -1,7 +1,7 @@
 # main links
 main:
   # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  #   url: https://react-portfolio-ashen-six.vercel.app/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -10,7 +10,7 @@ main:
   #   url: /sitemap/
   
   - title: "Introduce"
-    url: /about/
+    url: https://react-portfolio-ashen-six.vercel.app/
   - title: "Category"
     url: "/categories/"
   - title: "Tags"
