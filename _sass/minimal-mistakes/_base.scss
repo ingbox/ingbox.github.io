@@ -108,14 +108,15 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 0;
+  margin: 2em 1em 2em 1em;
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
   border-left: 0.25em solid $primary-color;
-  font-size: 0.7em;
+  font-size: 1em;
   cite {
     font-style: italic;
+    font-family: $applesdb;
 
     &:before {
       content: "\2014";
