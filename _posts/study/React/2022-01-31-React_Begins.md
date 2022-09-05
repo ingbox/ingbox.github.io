@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "React - 환경 설정 2(2/?)"
+title: "React - 시작하기 앞서"
 categories:
   - react
 ---
@@ -15,6 +15,295 @@ img.aligncenter{display:block;margin:0 auto}
 앞서 말했던 React의 특징과 [[생활코딩]](https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA) 유튜브 영상을 참고하기 때문에<br>
 개인적인 추가 환경 설정을 포스팅 하려고 한다.<br>
 
+
+## 시작하기 앞서
+
+<span id="mus">기초지식</span>에 대해서 알고 가자.<br>
+React는 JavaScript 기반으로 만들어진 프레임워크로<br>
+아래의 내용은 JavaScript 기초를 정리한 것이다.<br>
+
+### 자바스크립트 BOM
+
+<daon> " 브라우저 객체모델, 브라우저를 제어하기 위한 인터페이스 "</daon>
+<br>
+window : 브라우저 창(생략 가능)<br>
+✏️`window.open('https://www.google.com')// 새탭 열기`
+
+document: 현재 문서(DOM 객체)에 대한 정보
+
+history: 현재 브라우저가 이전에 접근했던 URL history 제어<br>
+✏️`history.back() // 뒤로가기`
+
+location: 문서의 주소와 관련된 객체, 문서 URL 변경, 문서의 위치와 관련한 정보 획득 가능<br>
+✏️`location.host // 홈페이지 host 주소 가져옴`
+
+screen: 사용자 디스플레이 화면에 대한 다양한 정보<br>
+✏️`console.dir(screen) // 사용자 디스플레이 정보 출력`
+
+navigator: 실행중인 브라우저에 대한 정보<br>
+✏️`navigator.appName // 브라우저 이름`<br>
+✏️`navigator.geolocation.getCurrentPostition(Callback)// 위치 정보 출력`
+
+### Script 로드
+
+1️⃣ `<body>` <span id="mus">맨 끝에 선언하여 script 내에서 DOM에 접근할 시 에러가 없도록</span>
+
+```html
+<body>
+  <script>
+    document.querySelector('#btn'); // Null
+  </script>
+
+  <button id="btn"></button>
+
+  <script>
+    document.querySelector('#btn'); // OK
+  </script>
+</body>
+```
+<br>
+2️⃣ `onload` <span id="mus">이벤트 안에 script에서 동작할 코드를 모두 넣음</span><br>
+HTML 파싱 DOM 생성과 외부 컨텐츠가 로드가 완료되면 실행되는 코드
+
+```html
+<body>
+  <script>
+    window.onload = function() {
+      document.querySelector('#btn'); // OK
+    }
+  </script>
+
+  <button id="btn"></button>
+
+
+</body>
+```
+<br>
+3️⃣ <span id="mus">DOMContentLoaded</span><br>
+DOM 요소만 로드되면 바로 실행 onload보다 빠름
+
+```html
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded',function() {
+      document.querySelector('#btn'); // OK
+    });
+  </script>
+
+  <button id="btn"></button>
+
+
+</body>
+```
+<br>
+
+4️⃣ <span id="mus">HTML5 이상에서 script 태그 내의 defer을 선언</span><br>
+HTML 파싱과 함께 비동기로 js파일을 불러옴<br>
+HTML 파싱이 끝나면 바로 script 실행<br>
+```html
+<head>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <button id="btn"></button>
+</body>
+```
+<font size="2">🚨defer이 주로 사용되니까 권장</font>
+<br>
+
+
+5️⃣ <span id="mus">HTML5 이상에서 script 태그 내의 async을 선언</span><br>
+HTML 파싱이 완료되지 않더라도 JavaScript 파일 실행<br>
+HTML 파싱과 js파일 불러오기를 동시에 실행하고 js를 불러오면 js를 바로 실행<br>
+Script 실행 중에는 HTML 파싱이 멈춤<br>
+```html
+<head>
+  <script src="./main.js" async></script>
+</head>
+<body>
+  <button id="btn"></button>
+</body>
+```
+<br>
+
+### 대망의 this
+
+> * 객체를 가르기는 키워드
+> * this가 어떤 객체???
+> * 호출한 대상이 this!!!
+
+1️⃣ 호출한 대상이 없으면 `this`는 전역 객체인 `window`가 됨!!<br>
+
+```js
+  let person = {
+    fullname: '잉브',
+    age: '26',
+    printThis: function() {
+      console.log(this);
+    }
+  }
+  person.printThis(); // printThis Function을 호출한 대상이 person이기 때문에 이때 this는 person이다
+  printThis(); // window === this이다
+```
+
+2️⃣ 콜백함수 안에서 this가 btn으로 설정됨<br>
+
+
+```js
+  let btn = document.querySelector('button');
+
+  btn.addEventListener('click', function() {
+    console.log(this); // <button> 버튼 </button>
+  })
+```
+
+3️⃣ ES5 이상부터 bind로 this를 변경할 수 있음<br>
+
+```js
+  let btn = document.querySelector('button');
+
+  btn.addEventListener('click', function() {
+    console.log(this); // <button> 버튼 </button>
+  })
+```
+
+```js
+  let pokemon = {
+    id: '1',
+    name: '이상해씨',
+    damage: 15,
+    attack: function() {
+      // console.log(this); // *pokemon
+      setTimeout((function() {
+        console.log(this.name, '가 공격하였습니다');
+        console.log(this.damage, '의 데미지를 입혔습니다');
+      }).bind(this), 2000); // *window => pokemon으로 변경
+    },
+  };
+```
+
+<font size="2">🚨bind는 단 한번만 사용할 수 있음</font>
+
+4️⃣ Arrow Function(화살표 함수)를 사용하면 상위 스코프에서 this를 물려받음<br>
+
+```js
+  let pokemon = {
+    id: '1',
+    name: '이상해씨',
+    damage: 15,
+    attack: function() {
+      setTimeout(() => {
+        console.log(this);
+      }, 2000);
+    },
+  };
+
+  person.attack();
+```
+
+5️⃣ Arrow Function가 나오기 전에는 this를 다른 변수에 넣어서 사용<br>
+
+```js
+  let pokemon = {
+    id: '1',
+    name: '이상해씨',
+    damage: 15,
+    attack: function() {
+      let that = this;
+      setTimeout(() => {
+        console.log(that.name); // OK
+      }, 2000);
+    },
+  };
+
+  person.attack();
+```
+
+6️⃣ Strict 모드에서는 호출한 것이 없으면 undefined가 나옴<br>
+
+### 이벤트 Capturing(캡처링) & Bubbling(버블링)
+<br>
+![](/assets/images/posting/react_220131/picture5.jpg){:.aligncenter}
+<br>
+
+<daon> " 캡처링은 body -> div -> button으로 호출,<br>
+버블링은 button -> div -> body로 전달 "</daon>
+
+1️⃣ Capturing & Bubbling 확인
+
+```js
+  ...// 각 tag들을 querySelector 로 불러옴
+
+  // Capturing
+  $btn.addEventListener('click', function() {
+    console.log('button 호출');
+  }, true);
+
+  $div.addEventListener('click', function() {
+    console.log('div 호출');
+  }, true);
+
+  $body.addEventListener('click', function() {
+    console.log('body 호출');
+  }, true);
+  // 클릭 후에 Capturing으로 하나씩 호출되는 것을 볼 수 있음
+  // body -> div -> button
+
+  //Bubbling
+  $btn.addEventListener('click', function() {
+    console.log('button 호출');
+  });
+
+  $div.addEventListener('click', function() {
+    console.log('div 호출');
+  });
+
+  $body.addEventListener('click', function() {
+    console.log('body 호출');
+  });
+
+  // 클릭 후에 Bubbling으로 하나 씩 호출되는 것을 볼 수 있음
+  // button -> div -> body
+```
+
+2️⃣ Event.eventPhase를 통해 확인하면 이벤트 흐름 단계 확인 가능
+
+> Event.CAPTURING_PHASE(1) : Capturing State일 때는 1를 반환
+> Event.CAPTURING_TARGET(2) : Target에 도달했을 때는 2를 반환
+> Event.BUBBLING_PHASE(3) : Bubbling State일 때는 3을 반환
+
+```js
+  $body.addEventListener('click', function(event) {
+    console.log(event.eventPhase); // 3
+  });
+```
+
+3️⃣ Capturing & Bubbling을 막아보자
+
+```js
+  // Capturing
+  $span.addEventListener('click', function(event) {
+    event.stopPropagation(); // 이후에 버블링을 Stop
+  });
+```
+
+
+```js
+  //Bubbling
+  $span.addEventListener('click', function(event) {
+    event.stopPropagation(); // 이후에 버블링을 Stop
+  });
+```
+
+4️⃣ 추가로 event.preventDefault()를 알아보자
+
+```js
+  const $a = document.querySelector('a');
+  $a.addEventListener('click', function(event) {
+    event.preventDefault();
+  })
+```
+<font size='2'>$(앵커태그) 또는 submit 이벤트를 막을 때 주로 사용</font>
 
 ## 시작해보자
 
@@ -94,17 +383,7 @@ Subject라는 이름의 <span id="mus">Component</span>를 생성하겠다고 �
 브라우저가 해석할 때에는 header가 포함된 상태로 Compile이 완료된 것을 볼 수 있다.<br>
 반면 Subject는 찾아볼 수 없다. 즉 브라우저로 넘어오기 전에 
 
-### 단방향 Data Binding
-
-### 가상 DOM
-
-### 가독성
-
-### 재사용성
-
-### 유지보수 편리
-
-## 디렉토리 구조
+### 자바스크립트 BOM 이란?
 
 생성한 App의 디렉토리 구조를 살펴보면 크게 <span id="mus">public</span>과 <span id="mus">src</span>로 나눌 수 있다.<br>
 <span id="mus">public</span>은 `index.html` 파일이 있고 생성한 Component를 `id="root"`인 태그 안에 삽입한다.<br>
